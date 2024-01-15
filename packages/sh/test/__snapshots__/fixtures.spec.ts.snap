@@ -1778,6 +1778,18 @@ echo 'foo'
 "
 `;
 
+exports[`parser and printer > should format all fixtures > run-semicolon.Dockerfile 1`] = `
+"FROM registry.access.redhat.com/ubi9/ubi-micro
+RUN echo hi; echo hello
+"
+`;
+
+exports[`parser and printer > should format all fixtures > run-semicolon.Dockerfile 2`] = `
+"FROM registry.access.redhat.com/ubi9/ubi-micro
+RUN echo hi; echo hello
+"
+`;
+
 exports[`parser and printer > should format all fixtures > shell.sh 1`] = `
 "#!/bin/bash
 NAME= "ufc-web-client"

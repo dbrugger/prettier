@@ -28,7 +28,7 @@ describe('parser and printer', () => {
 
         expect(output).toMatchSnapshot(relativeFilepath)
       } catch (err: unknown) {
-        expect(((err as Error).cause as IShParseError).Text).toMatchSnapshot(
+        expect(((err as Error).cause as IShParseError)?.Text).toMatchSnapshot(
           relativeFilepath,
         )
       }
